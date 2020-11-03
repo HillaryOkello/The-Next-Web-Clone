@@ -68,6 +68,7 @@ html {
   background:linear-gradient(to bottom right,#c09,#f42 85%);
   position: absolute;
   z-index: 1;
+  display:none;
 }
 
 .icons{
@@ -132,12 +133,70 @@ html {
   margin-top: 10px;
   text-decoration: none;
 }
+.first-advert{
+  display: grid;
+  grid-template-columns: auto;
+  gap: 7px;
+
+}
+.grid-insight{
+  display: grid;
+  grid-template-columns: auto;
+  gap: 7px;
+  margin-right: 10px;
+}
+
+
+.grid-wireles {
+   background-image: url("../images/latest_1.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width:100%;
+  height: 150px;
+  display: grid;
+  
+
+}
+
+
+.info h2{
+  margin: 0;
+  padding: 0;
+}
+
+.date-pub {
+ display: none;
+
+}
+.grid-adv-1{
+ background-image: url("../images/Tesla-supercharger-europe-germany-car-future-EV-charging-free-796x448.jpg");
+ background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 150px;
+  width:100%;
+  display: block;
+}
+
+.grid-adv-2{
+background-image: url("../images/tnw2020-feature_img-02.jpg");
+background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width:100%;
+  height: 150px;
+
+  display: block;
+}
 
 @media only screen and (max-width:768px){
 .nav-items-second {
   display: none;
 }
-
+.info{
+  position: relative;
+  top: 35%;
+  font-size: 14px;
+  
+}
 }
 
 @media only screen and (min-width:768px) and (max-width:1024px){
@@ -147,13 +206,33 @@ html {
  }
  
 .mob-menu{
- display: none;
+      display: none;
 }
 .nav-items-second .laptop-only{
   display: none;
 }
+.first-advert{
+ 
+ grid-template-columns: 60% 40%;
 
-  
+ 
+
+}
+.grid-wireles {
+
+  width:100%;
+  height: 320px;
+}
+.grid-insight{
+
+  grid-template-columns: auto ;
+
+}
+.date-pub {
+  justify-content: end;
+  justify-self: end;
+  display: block;
+}
 }
 @media only screen and (min-width:1024px){
 
@@ -162,6 +241,26 @@ html {
 }
 .mob-menu{
  display: none;
+}
+.first-advert{
+  grid-template-columns: 60% 40%;
+  
+}
+.grid-wireles {
+
+  width:100%;
+  height: 320px;
+}
+.grid-insight{
+
+  grid-template-columns: auto ;
+
+}
+.date-pub {
+  justify-content: end;
+  justify-self: end;
+  display: block;
+
 }
 
 }
