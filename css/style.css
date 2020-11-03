@@ -281,6 +281,50 @@ h4 {
     grid-template-rows: 60% 40%;
 }
 
+.latest h2 a{
+  color: #f42;
+  text-decoration: none;
+  margin-left: 5px;
+  font-size: 1.3em;
+  font-weight:900;
+}
+
+.latest-col{
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.latest-col li{
+  display: flex;
+  margin-top: 20px;
+}
+
+.latest-col img{
+  width: 25%;
+}
+
+.latest-col p{
+  color: black;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.latest-col p small{
+  color: gray;
+  font-weight: 200;
+  margin-left: 10px;
+}
+
+.latest-section a::after{
+  background-image:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" stroke="%23F42" stroke-width="3" stroke-miterlimit="10" d="M4.75 1.5l6.5 6.5-6.5 6.5"/></svg>');
+  content: "";
+  display: inline-block;
+  height: 16px;
+  margin-left: 4px;
+  width: 16px;
+}
+
 @media only screen and (max-width:768px) {
     .nav-items-second {
         display: none;
