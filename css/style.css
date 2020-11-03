@@ -295,6 +295,16 @@ h4 {
   padding-left: 0;
 }
 
+.latest-col .back {
+  width: 95px;
+  /* position: absolute; */
+  left: 10px;
+  padding-top: 75px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
 .latest-col li{
   display: flex;
   margin-top: 20px;
@@ -304,19 +314,22 @@ h4 {
   width: 25%;
 }
 
-.latest-col p{
+.latest-col h4{
   color: black;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
   margin-left: 10px;
+  word-wrap: break-word;
 }
 
-.latest-col p small{
-  color: gray;
+.latest-col li small{
+  color: #aaa;
+  display: block;
   font-weight: 200;
   margin-left: 10px;
 }
 
-.latest-section a::after{
+.latest-section .lat::after{
   background-image:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" stroke="%23F42" stroke-width="3" stroke-miterlimit="10" d="M4.75 1.5l6.5 6.5-6.5 6.5"/></svg>');
   content: "";
   display: inline-block;
@@ -356,6 +369,34 @@ h4 {
         justify-self: end;
         display: block;
     }
+    .latest-col{
+      display:flex;
+      flex: 0 1 auto;
+      flex-flow: row wrap;
+      align-items: center;
+    }
+    .latest-col li{
+      /* max-width: 25%; */
+      display: block;
+      flex-basis: 30%;
+      margin: 5px;
+    }
+    .latest-col li h4{
+      font-size:100%;
+    }
+    .latest-col .back {
+      background-color: #000;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: block;
+      height: 0;
+      overflow: hidden;
+      padding-top: 50%;
+      width: 100%;
+      margin-bottom: 8px;
+      position: relative;
+    }
 }
 
 @media only screen and (min-width:1024px) {
@@ -379,5 +420,33 @@ h4 {
         justify-content: end;
         justify-self: end;
         display: block;
+    }
+    .latest-col{
+      display:flex;
+      flex: 0 1 auto;
+      flex-flow: row wrap;
+      align-items: center;
+    }
+    .latest-col li{
+      max-width: 20%;
+      display: block;
+      /* flex-basis: 30%; */
+      margin: 5px;
+    }
+    .latest-col li h4{
+      font-size:100%;
+    }
+    .latest-col .back {
+      background-color: #000;
+      background-position: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: block;
+      height: 0;
+      overflow: hidden;
+      padding-top: 50%;
+      width: 100%;
+      margin-bottom: 8px;
+      position: relative;
     }
 }
