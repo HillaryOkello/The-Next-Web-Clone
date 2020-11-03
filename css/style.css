@@ -24,15 +24,15 @@ html {
   display: flex;
   align-items: center;
   justify-content: end;
-  width: 100%;
+  width: 45px;
+  justify-self: end;
 }
 .search-img{
   padding: 0 10px 0 10px;
   border-left:1px solid rgb(218, 206, 206);
   border-right:1px solid rgb(179, 174, 174);
-  
-
 }
+
 .search-img img{
   rotate: 90deg;
 }
@@ -53,13 +53,56 @@ html {
  justify-content: center;
   padding: 0 10px 0 10px;
 }
+
 .nav-items-second ul {
-   list-style: none;
- }
-  .nav-items-second ul li{
-   display: inline-block;
-   margin: 0 5px 0 5px;
- }
+  list-style: none;
+}
+
+.nav-items-second ul li{
+  display: inline-block;
+  margin: 0 5px 0 5px;
+}
+
+.mobile-menu-page{
+  width: 100%;
+  background:linear-gradient(to bottom right,#c09,#f42 85%);
+  position: absolute;
+  z-index: 1;
+}
+
+.icons{
+  display: flex;
+  list-style: none;
+  width: 100%;
+  border-top: 1px solid hsla(0,0%,100%,.15);
+  border-bottom: 1px solid hsla(0,0%,100%,.15);
+  align-items: center;
+}
+
+.icons li{
+  margin: 20px;
+  font-size: large;
+}
+
+.icons li a{
+  color: #fff;
+}
+
+.mobile-menu-items{
+  display: flex;
+}
+
+.close-page{
+  width: 100%;
+}
+
+.close-page .menu-close{
+  float: right;
+  font-size: 30px;
+  color: #fff;
+  width: 100%;
+  background: white;
+}
 
 @media only screen and (max-width:768px){
 .nav-items-second {
