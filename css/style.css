@@ -1,266 +1,339 @@
 html {
-  margin: 0;
-  padding: 0;
-}
-.mob-nav{
-  display: grid;
-  width: 100%;
-  grid-template-columns:10% 83% 7% ;
-  box-shadow:  0 3px  rgb(248, 244, 244);
-}
-.logo img{
-  background-color: black;
-  width: 80px;
-  height: 30px;
-  padding: 10px;
-}
-.logo{
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  width: 100%;
-}
-.search{
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  width: 45px;
-  justify-self: end;
-}
-.search-img{
-  padding: 0 10px 0 10px;
-  border-left:1px solid rgb(218, 206, 206);
-  border-right:1px solid rgb(179, 174, 174);
+    margin: 0;
+    padding: 0;
 }
 
-.search-img img{
-  rotate: 90deg;
+.laptop-nav {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 100%;
+    background-color: rgb(29, 28, 28);
+    padding: 0 5px 0 5px;
+    height: 35px;
 }
-.search-img:hover{
-  background-color: rgb(241, 235, 235);
+
+.left-menu,
+.right-menu {
+    list-style: none;
+    margin: 0;
 }
- .menu-line{
-  background-color:rgb(245, 31, 31);
-  height: 2px;
-  margin: 3px;
-  width: 20px;
- 
+
+.left-menu li a,
+.right-menu li a {
+    color: rgb(197, 193, 193);
+    text-transform: capitalize;
+    cursor: pointer;
 }
-.mob-menu{
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
-  padding: 0 10px 0 10px;
+
+.left-menu li a:hover,
+.right-menu li a:hover {
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.left-menu li,
+.right-menu li {
+    margin: 0 5px 0 5px;
+}
+
+.left-menu {
+    justify-self: left;
+    display: flex;
+    align-self: center;
+}
+
+.right-menu {
+    justify-self: right;
+    display: flex;
+    align-self: center;
+}
+
+.event:hover .event-list,
+.bisuness:hover .bisuness-list {
+    display: block;
+}
+
+.event-list,
+.bisuness-list {
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: black;
+    z-index: 1;
+    width: 200px;
+}
+
+.event-list li,
+.bisuness-list li {
+    margin: 5px 0 10px 0;
+    color: #fff;
+    border-bottom: solid 2px rgb(66, 62, 62);
+}
+
+.mob-nav {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 10% 83% 7%;
+    box-shadow: 0 3px rgb(248, 244, 244);
+}
+
+.logo img {
+    background-color: black;
+    width: 80px;
+    height: 30px;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 45px;
+    justify-self: end;
+}
+
+.search-img {
+    padding: 0 10px 0 10px;
+    border-left: 1px solid rgb(218, 206, 206);
+    border-right: 1px solid rgb(179, 174, 174);
+}
+
+.search-img img {
+    rotate: 90deg;
+}
+
+.search-img:hover {
+    background-color: rgb(241, 235, 235);
+}
+
+.menu-line {
+    background-color: rgb(245, 31, 31);
+    height: 2px;
+    margin: 3px;
+    width: 20px;
+}
+
+.mob-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px 0 10px;
 }
 
 .nav-items-second ul {
-  list-style: none;
+    list-style: none;
 }
 
-.nav-items-second ul li{
-  display: inline-block;
-  margin: 0 5px 0 5px;
+.nav-items-second ul li {
+    display: inline-block;
+    margin: 0 5px 0 5px;
 }
 
-.mobile-menu-page{
-  width: 100%;
-  background:linear-gradient(to bottom right,#c09,#f42 85%);
-  position: absolute;
-  z-index: 1;
-  display:none;
+.nav-items-second ul li a {
+    color: rgb(121, 112, 112);
+    cursor: pointer;
 }
 
-.icons{
-  display: flex;
-  list-style: none;
-  width: 100%;
-  border-top: 1px solid hsla(0,0%,100%,.15);
-  border-bottom: 1px solid hsla(0,0%,100%,.15);
-  align-items: center;
+.nav-items-second ul li a:hover {
+    color: rgb(42, 40, 40);
+    text-decoration: none;
 }
 
-.icons li{
-  margin: 20px;
-  font-size: large;
+.mobile-menu-page {
+    width: 100%;
+    background: linear-gradient(to bottom right, #c09, #f42 85%);
+    position: absolute;
+    z-index: 1;
+    display: none;
 }
 
-.icons li a{
-  color: #fff;
+.icons {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    border-top: 1px solid hsla(0, 0%, 100%, .15);
+    border-bottom: 1px solid hsla(0, 0%, 100%, .15);
+    align-items: center;
 }
 
-.close-page{
-  display: grid;
-  grid-template-columns: auto;
-  width: 100%;
-  height: 30px;
+.icons li {
+    margin: 20px;
+    font-size: large;
 }
 
-.close-page .menu-close{
-  position: relative;
-   background-color:rgb(245, 31, 31);
-  height: 2px;
-  margin: 3px;
-  width: 20px;
-  background: white;
-  justify-self: end;
-  
-}
-.symb_1{
-  transform: rotate(45deg) translate(-10px,20px);
-}
-.symb_2{
-  transform: rotate(-45deg) translate(-10px,-20px);
+.icons li a {
+    color: #fff;
 }
 
-.mobile-menu-items{
-  display: flex;
-  justify-content:space-evenly;
+.close-page {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    height: 30px;
 }
 
-.section-list li{
-  list-style: none;
-  color: #fff;
+.close-page .menu-close {
+    position: relative;
+    background-color: rgb(245, 31, 31);
+    height: 2px;
+    margin: 3px;
+    width: 20px;
+    background: white;
+    justify-self: end;
 }
 
-.section-list h4{
-  text-transform: uppercase;
-  font-size: 15px;
+.symb_1 {
+    transform: rotate(45deg) translate(-10px, 20px);
 }
 
-.section-list li a{
-  color: #fff;
-  margin-top: 10px;
-  text-decoration: none;
-}
-.first-advert{
-  display: grid;
-  grid-template-columns: auto;
-  gap: 7px;
-
-}
-.grid-insight{
-  display: grid;
-  grid-template-columns: auto;
-  gap: 7px;
-  margin-right: 10px;
+.symb_2 {
+    transform: rotate(-45deg) translate(-10px, -20px);
 }
 
+.mobile-menu-items {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-list li {
+    list-style: none;
+    color: #fff;
+}
+
+.section-list h4 {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.section-list li a {
+    color: #fff;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.first-advert {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 7px;
+}
+
+.grid-insight {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 7px;
+    margin-right: 10px;
+}
 
 .grid-wireles {
-   background-image: url("../images/latest_1.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width:100%;
-  height: 150px;
-  display: grid;
-  
-
+    background-image: linear-gradient(#bba6b534, #c0afafaf), url("../images/latest_1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 150px;
+    display: grid;
+    grid-template-rows: 40% 60%;
 }
 
+.info {
+    grid-row: 2/3;
+    align-self: end;
+    color: white;
+    margin-left: 20px;
+}
 
-.info h2{
-  margin: 0;
-  padding: 0;
+.info h3,
+h4 {
+    margin: 0;
+    padding: 0;
 }
 
 .date-pub {
- display: none;
-
-}
-.grid-adv-1{
- background-image: url("../images/Tesla-supercharger-europe-germany-car-future-EV-charging-free-796x448.jpg");
- background-size: 100% 100%;
-  background-repeat: no-repeat;
-  height: 150px;
-  width:100%;
-  display: block;
+    display: none;
+    color: white;
 }
 
-.grid-adv-2{
-background-image: url("../images/tnw2020-feature_img-02.jpg");
-background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width:100%;
-  height: 150px;
-
-  display: block;
+.grid-adv-1 {
+    background-image: linear-gradient(#bba6b534, #c0afafaf), url("../images/Tesla-supercharger-europe-germany-car-future-EV-charging-free-796x448.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 60% 40%;
 }
 
-@media only screen and (max-width:768px){
-.nav-items-second {
-  display: none;
-}
-.info{
-  position: relative;
-  top: 35%;
-  font-size: 14px;
-  
-}
+.grid-adv-2 {
+    background-image: linear-gradient(#bba6b534, #c0afafaf), url("../images/tnw2020-feature_img-02.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 150px;
+    display: grid;
+    grid-template-rows: 60% 40%;
 }
 
-@media only screen and (min-width:768px) and (max-width:1024px){
- .nav-items-second{
-   display: block;
-
- }
- 
-.mob-menu{
-      display: none;
-}
-.nav-items-second .laptop-only{
-  display: none;
-}
-.first-advert{
- 
- grid-template-columns: 60% 40%;
-
- 
-
-}
-.grid-wireles {
-
-  width:100%;
-  height: 320px;
-}
-.grid-insight{
-
-  grid-template-columns: auto ;
-
-}
-.date-pub {
-  justify-content: end;
-  justify-self: end;
-  display: block;
-}
-}
-@media only screen and (min-width:1024px){
-
-.nav-items-second .laptop-only{
-  display: inline-block;
-}
-.mob-menu{
- display: none;
-}
-.first-advert{
-  grid-template-columns: 60% 40%;
-  
-}
-.grid-wireles {
-
-  width:100%;
-  height: 320px;
-}
-.grid-insight{
-
-  grid-template-columns: auto ;
-
-}
-.date-pub {
-  justify-content: end;
-  justify-self: end;
-  display: block;
-
+@media only screen and (max-width:768px) {
+    .nav-items-second {
+        display: none;
+    }
 }
 
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .nav-items-second {
+        display: block;
+    }
+    .mob-menu {
+        display: none;
+    }
+    .nav-items-second .laptop-only {
+        display: none;
+    }
+    .first-advert {
+        grid-template-columns: 60% 40%;
+    }
+    .grid-wireles {
+        width: 100%;
+        height: 320px;
+    }
+    .grid-insight {
+        grid-template-columns: auto;
+    }
+    .date-pub {
+        justify-content: end;
+        justify-self: end;
+        display: block;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .nav-items-second .laptop-only {
+        display: inline-block;
+    }
+    .mob-menu {
+        display: none;
+    }
+    .first-advert {
+        grid-template-columns: 60% 40%;
+    }
+    .grid-wireles {
+        width: 100%;
+        height: 320px;
+    }
+    .grid-insight {
+        grid-template-columns: auto;
+    }
+    .date-pub {
+        justify-content: end;
+        justify-self: end;
+        display: block;
+    }
 }
