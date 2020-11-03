@@ -93,15 +93,30 @@ html {
 }
 
 .close-page{
-  width: 100%;
+  display: grid;
+ grid-template-columns: auto;
+   width: 100%;
+   height: 30px;
+   background-color: aqua;
 }
 
 .close-page .menu-close{
-  float: right;
-  font-size: 30px;
-  color: #fff;
-  width: 100%;
+  position: relative;
+   background-color:rgb(245, 31, 31);
+  height: 2px;
+  margin: 3px;
+  width: 20px;
   background: white;
+  justify-self: end;
+  
+}
+.symb_1{
+
+ transform: rotate(45deg) translate(-10px,20px);
+}
+.symb_2{
+ 
+  transform: rotate(-45deg) translate(-10px,-20px);
 }
 
 @media only screen and (max-width:768px){
