@@ -764,7 +764,6 @@ h4 {
   }
 
   .first-advert {
-    margin-top: 40px !important;
     grid-template-columns: 60% 40%;
   }
 
