@@ -195,6 +195,10 @@
   margin-top: 20px;
 }
 
+/* .latest-col li a {
+  background-image: url(./images/deals1.jpg);
+} */
+
 .middle-list li {
   border-bottom: 1px solid #eee;
   margin: 10px;
@@ -363,6 +367,17 @@ h4 {
 }
 
 .latest-col .back {
+  background-image: url(../images/deals1.jpg);
+  width: 95px;
+  left: 10px;
+  padding-top: 75px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.latest-col .back-1 {
+  background-image: url(../images/circuit.png);
   width: 95px;
   left: 10px;
   padding-top: 75px;
@@ -687,6 +702,22 @@ h4 {
   }
 
   .latest-col .back {
+    background-image: url(../images/deals1.jpg);
+    background-color: #000;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding-top: 50%;
+    width: 100%;
+    margin-bottom: 8px;
+    position: relative;
+  }
+
+  .latest-col .back-1 {
+    background-image: url(../images/circuit.png);
     background-color: #000;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -704,7 +735,7 @@ h4 {
     display: block;
   }
 
-  .index h2 {
+  .index-1 h2 {
     display: block;
   }
 
@@ -811,6 +842,22 @@ h4 {
   }
 
   .latest-col .back {
+    background-image: url(../images/deals1.jpg);
+    background-color: #000;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding-top: 50%;
+    width: 100%;
+    margin-bottom: 8px;
+    position: relative;
+  }
+
+  .latest-col .back-1 {
+    background-image: url(../images/circuit.png);
     background-color: #000;
     background-position: 100%;
     background-repeat: no-repeat;
@@ -828,7 +875,7 @@ h4 {
     display: block;
   }
 
-  .index h2 {
+  .index-1 h2 {
     display: block;
   }
 
