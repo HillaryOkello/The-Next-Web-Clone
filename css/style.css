@@ -837,13 +837,13 @@ h4 {
     top: 0;
     display: flex;
     justify-content: space-between;
-    width: 99%;
+    width: 95%;
   }
 
   .laptop-nav {
     display: grid;
     grid-template-columns: 60% 40%;
-    width: 99%;
+    width: 95%;
     background-color: rgb(29, 28, 28);
     padding: 0 5px 0 5px;
     height: 35px;
