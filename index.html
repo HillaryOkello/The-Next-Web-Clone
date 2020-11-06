@@ -12,7 +12,7 @@
 <body>
     <nav>
         <div class="laptop-nav">
-            <ul class="left-menu">
+            <ul class="left-menu d-flex no-list">
                 <li>
                     <a>
                     News
@@ -24,7 +24,7 @@
                     Events <i class="fas fa-caret-down"></i>
 
                   </a>
-                    <ul class="event-list">
+                    <ul class="event-list no-list">
                         <li>
                             <a>
                             TNW2020
@@ -45,7 +45,7 @@
                     Bisuness <i class="fas fa-caret-down"></i>
 
                   </a>
-                    <ul class="bisuness-list">
+                    <ul class="bisuness-list no-list">
                         <li>
                             <a>
                             Index
@@ -80,7 +80,7 @@
                   </a>
                 </li>
             </ul>
-            <ul class="right-menu">
+            <ul class="right-menu d-flex no-list">
                 <li>
                     <a>
                     About
@@ -108,13 +108,13 @@
             </ul>
         </div>
         <div class="mob-nav">
-            <div class="logo">
+            <div class="logo d-flex">
                 <a href="#" rel="">
                     <img alt="The Next Web" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg">
                 </a>
             </div>
-            <div class="nav-items-second">
-                <ul>
+            <div class="nav-items-second d-flex">
+                <ul class="no-list">
                     <li><a>LATEST</a></li>
                     <li><a>HARD FORK</a></li>
                     <li><a>PLUGGED</a></li>
@@ -124,14 +124,14 @@
                     <li class="laptop-only"><a>NEURAL</a></li>
                 </ul>
             </div>
-            <div class="search">
+            <div class="search d-flex">
                 <div class="search-img">
                     <a href="#">
                         <img src="https://img.icons8.com/material-outlined/24/000000/search.png" alt="search"/>
                     </a>
                 </div>
             </div>
-            <div class="mob-menu">
+            <div class="mob-menu d-flex">
                 <div class="menu-line"></div>
                 <div class="menu-line"></div>
                 <div class="menu-line"></div>
@@ -141,7 +141,7 @@
                     <div class="menu-close symb_1"></div>
                     <div class="menu-close symb_2"></div>
                 </div>
-                <ul class="icons">
+                <ul class="icons d-flex no-list">
                     <li>
                         <a href="#">
                             <i class="fas fa-envelope-square"></i>
@@ -183,8 +183,8 @@
                         </a>
                     </li>
                 </ul>
-                <div class="mobile-menu-items">
-                    <ul class="section-list">
+                <div class="mobile-menu-items d-flex">
+                    <ul class="section-list no-list">
                         <li>
                             <h4>Sections</h4>
                         </li>
@@ -268,109 +268,112 @@
         </div>
 
     </nav>
-    <main>
-        <div class="first-advert">
-            <div class="grid-wireles">
-                <div class="date-pub">
-                    Tuesday — November 3, 2020
-                </div>
-                <div class="info">
-                    <h3>These $14 Redmi neckbuds give you wireless bang for your basic buck</h3>
-                    <div>
-                        <p> by <a>Ivan Mehta </a> <i class="far fa-clock"></i>
-                            <small>1 hours ago <i class="fas fa-share-alt"></i>3</small> </p>
-                    </div>
-                </div> 
 
-            </div>
-            <div class="grid-insight">
-                <div class="grid-adv-1">
-                    <div class="info">
-                        <h3>Watch all TNW2020 talks on-demand</h3>
-                    </div>
-                </div>
-                <div class="grid-adv-2">
-                    <div class="info">
-                        <h4>INSIGHTS</h4>
-                        <h3>
-                            Tesla hit with $14M fine over German battery recycling bungle</h3>
-                        <p> by <a>Mathew Bedan </a> <i class="far fa-clock"></i>
-                          <small>3 hours ago </small> 
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="first-advert">
+      <div class="grid-wireles">
+        <div class="cover-logo"></div>
+          <div class="date-pub">
+              Tuesday — November 3, 2020
+          </div>
+          <div class="info">
+              <h3 class="big">These $14 Redmi neckbuds give you wireless bang for your basic buck</h3>
+              <div>
+                  <p> by <a>Ivan Mehta </a> <i class="far fa-clock"></i>
+                      <small>1 hours ago <i class="fas fa-share-alt"></i>3</small> </p>
+              </div>
+          </div> 
+      </div>
+      <div class="grid-insight">
+          <div class="grid-adv-1">
+              <div class="info">
+                  <h3 class="big-medium">Watch all TNW2020 talks on-demand</h3>
+              </div>
+          </div>
+          <div class="grid-adv-2">
+              <div class="info">
+                  <h4>INSIGHTS</h4>
+                  <h3 class="big-medium">
+                      Tesla hit with $14M fine over German battery recycling bungle</h3>
+                  <p> by <a>Mathew Bedan </a> <i class="far fa-clock"></i>
+                    <small>3 hours ago </small> 
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <main>
         <div class="latest">
           <section class="latest-section">
             <h2>
               <a href="#" class="lat">Latest news</a>
             </h2>
-            <ul class="latest-col">
-              <li>
+            <ul class="latest-col no-list">
+              <li class="d-flex">
                 <a href="#" class="back-1"></a>
                 <div>
-                <h4>No one but Nintendo could’ve made ‘Mario Kart Live:</h4>
+                <h4>No one but Nintendo could’ve made ‘Mario Kart</h4>
                   <small>Callum Booth ◽ 5 minutes ago</small>
                 </div>
               </li>
-              <li>
+              <li class="d-flex">
                 <a href="#" class="back-1"></a>
                 <div>
                 <h4>How the cloud has helped businesses survive covid-19</h4>
-                  <small>Toni Sekinah ◽ 9 minutes ago</small>
+                  <small>Callum Booth ◽ 5 minutes ago</small>
                 </div>
               </li>
-              <li>
+              <li class="d-flex">
                 <a href="#" class="back-1"></a>
                 <div>
-                <h4>Back up all your files into the cloud with this alternative</h4>
-                  <small>TNW Deals ◽ 10 minutes ago</small>
+                <h4>Back up all your files into the cloud with alternative</h4>
+                  <small>Callum Booth ◽ 5 minutes ago</small>
                 </div>
               </li>
-              <li>
+              <li class="d-flex">
                 <a href="#" class="back-1"></a>
                 <div>
                 <h4>Tesla hit with $14M fine over German battery recycling</h4>
-                  <small>Mathew Beedam ◽ 12 minutes ago</small>
+                  <small>Callum Booth ◽ 5 minutes ago</small>
                 </div>
               </li>
-              <li>
+              <li class="d-flex">
                 <a href="#" class="back-1"></a>
                 <div>
                 <h4>Engineer shares 5 tips on how to ace coding interviews</h4>
-                  <small>Yen Huang ◽ 13 minutes ago</small>
+                  <small>Callum Booth ◽ 5 minutes ago</small>
                 </div>
               </li>
-              <li>
+              <li class="d-flex">
                 <a href="#" class="back-1"></a>
                 <div>
                 <h4>Ransomware could interfere with 2020 elections</h4>
                   <small>The Conversation ◽ 15 minutes ago</small>
                 </div>
               </li>
-              <li>
+              <li class="d-flex">
                 <a href="#" class="back-1"></a>
                 <div>
                 <h4>Spotify’s song booster service offers exposure for royalties</h4>
-                  <small>Ivan Mehta ◽ 20 minutes ago</small>
+                  <small>Callum Booth ◽ 5 minutes ago</small>
                 </div>
               </li>
-              <li>
+              <li class="d-flex">
                 <a href="#" class="back-1"></a>
                 <div>
                 <h4>Apple to reveal ARM-based Macs at event on November 10</h4>
-                  <small>TNW Deals ◽ 20 minutes ago</small>
+                  <small>Callum Booth ◽ 5 minutes ago</small>
                 </div>
               </li>
             </ul>
           </section>
+        </div>
           <section class="index">
             <div class="index-1">
               <h2>
-                <a href="#" class="late">Latest funding rounds on index.co</a>
+                <a href="#" class="lat">Latest funding rounds on index.co</a>
               </h2>
-              <ul class="small-ul">
+              <ul class="small-ul no-list">
                 <li>See more</li>
                 <li class="slash">|</li>
                 <li>Get updates by mail</li>
@@ -469,7 +472,6 @@
               </div>
             </div>
           </section>
-        </div>
         <section class="middle">
           <div class="middle-1">
             <h2>
@@ -485,7 +487,7 @@
                   </p>
               </div>
             </div>
-            <div class="middle-">
+            <div class="middle- d-flex">
                 <div>
                   <h5>Latest</h5>
                   <h4>Xilinx stock goes up, AMD stock goes down aftre $35M buyout</h4>
@@ -534,7 +536,7 @@
                   </p>
               </div>
             </div>
-            <div class="middle-">
+            <div class="middle- d-flex">
                 <div>
                   <h5>Latest</h5>
                   <h4>Xilinx stock goes up, AMD stock goes down aftre $35M buyout</h4>
@@ -583,7 +585,7 @@
                   </p>
               </div>
             </div>
-            <div class="middle-">
+            <div class="middle- d-flex">
                 <div>
                   <h5>Latest</h5>
                   <h4>Xilinx stock goes up, AMD stock goes down aftre $35M buyout</h4>
@@ -632,7 +634,7 @@
                   </p>
               </div>
             </div>
-            <div class="middle-">
+            <div class="middle- d-flex">
                 <div>
                   <h5>Latest</h5>
                   <h4>Xilinx stock goes up, AMD stock goes down aftre $35M buyout</h4>
@@ -681,7 +683,7 @@
                   </p>
               </div>
             </div>
-            <div class="middle-">
+            <div class="middle- d-flex">
                 <div>
                   <h5>Latest</h5>
                   <h4>Xilinx stock goes up, AMD stock goes down aftre $35M buyout</h4>
@@ -730,8 +732,8 @@
                   </p>
               </div>
             </div>
-            <div class="middle-">
-                <div>
+            <div class="middle- d-flex">
+                <div class="d-flex">
                   <h5>Latest</h5>
                   <h4>Xilinx stock goes up, AMD stock goes down aftre $35M buyout</h4>
                 </div>
@@ -779,7 +781,7 @@
                   </p>
               </div>
             </div>
-            <div class="middle-">
+            <div class="middle- d-flex">
                 <div>
                   <h5>Latest</h5>
                   <h4>Xilinx stock goes up, AMD stock goes down aftre $35M buyout</h4>
@@ -828,7 +830,7 @@
                   </p>
               </div>
             </div>
-            <div class="middle-">
+            <div class="middle- d-flex">
                 <div>
                   <h5>Latest</h5>
                   <h4>Xilinx stock goes up, AMD stock goes down aftre $35M buyout</h4>
@@ -877,7 +879,7 @@
                   </p>
               </div>
             </div>
-            <div class="middle-">
+            <div class="middle- d-flex">
                 <div>
                   <h5>Latest</h5>
                   <h4>Xilinx stock goes up, AMD stock goes down aftre $35M buyout</h4>
@@ -919,132 +921,131 @@
             <a href="#" class="lat">Latest deals</a>
           </h2>
           <ul class="latest-col">
-            <li>
+            <li class="d-flex">
               <a href="#" class="back"></a>
               <div>
               <h4>Password Boss Premium: Lifetime Subscription</h4>
                 <small class="small-cross">$499</small><small>$34.99</small>
               </div>
             </li>
-            <li>
+            <li class="d-flex">
               <a href="#" class="back"></a>
               <div>
-              <h4>Hushed Private Phone Line: Lifetime Subscription</h4>
-                <small class="small-cross">$150</small><small>$19.99</small>
+              <h4>Password Boss Premium: Lifetime Subscription</h4>
+                <small class="small-cross">$499</small><small>$34.99</small>
               </div>
             </li>
-            <li>
+            <li class="d-flex">
               <a href="#" class="back"></a>
               <div>
-              <h4>The Premium 2021 Microsoft Excel Certificate</h4>
-                <small class="small-cross">$2376</small><small>$39.99</small>
+              <h4>Password Boss Premium: Lifetime Subscription</h4>
+                <small class="small-cross">$499</small><small>$34.99</small>
               </div>
             </li>
-            <li>
+            <li class="d-flex">
               <a href="#" class="back"></a>
               <div>
-              <h4>TourBox: The Ultimate Controller for Creators</h4>
-                <small class="small-cross">$169</small><small>$149.99</small>
+              <h4>Password Boss Premium: Lifetime Subscription</h4>
+                <small class="small-cross">$499</small><small>$34.99</small>
               </div>
             </li>
-            <li>
+            <li class="d-flex">
               <a href="#" class="back"></a>
               <div>
-              <h4>XSplit VCam: Lifetime Subscription (Windows)</h4>
-                <small class="small-cross">$49</small><small>$19.99</small>
+              <h4>Password Boss Premium: Lifetime Subscription</h4>
+                <small class="small-cross">$499</small><small>$34.99</small>
               </div>
             </li>
-            <li>
+            <li class="d-flex">
               <a href="#" class="back"></a>
               <div>
-              <h4>StackSkills Unlimited: Lifetime Access</h4>
-                <small class="small-cross">$1495</small><small>$59</small>
+              <h4>Password Boss Premium: Lifetime Subscription</h4>
+                <small class="small-cross">$499</small><small>$34.99</small>
               </div>
             </li>
-            <li>
+            <li class="d-flex">
               <a href="#" class="back"></a>
               <div>
-              <h4>The 2020 Adobe Graphic Design Certification School</h4>
-                <small class="small-cross">$1497</small><small>$49</small>
+              <h4>Password Boss Premium: Lifetime Subscription</h4>
+                <small class="small-cross">$499</small><small>$34.99</small>
               </div>
             </li>
-            <li>
+            <li class="d-flex">
               <a href="#" class="back"></a>
               <div>
-              <h4>The Ultimate FinTech & Blockchain Bootcamp</h4>
-                <small class="small-cross">$1592</small><small>$39.99</small>
+              <h4>Password Boss Premium: Lifetime Subscription</h4>
+                <small class="small-cross">$499</small><small>$34.99</small>
               </div>
             </li>
           </ul>
         </section>
-
-        <footer class="footer">
-          <div class="foot-1">
-            <ul class="icons-2">
-              <li>
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-twitter-square"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-youtube-square"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-pinterest"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fas fa-rss    "></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fas fa-envelope-square"></i>
-                </a>
-              </li>
-            </ul>
-            <ul class="events">
-              <li>
-                <a href="#">Events</a>
-              </li>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Advertise</a>
-              </li>
-              <li>
-                <a href="#">Jobs</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="foot-2">
-            <div class="foot-2-items">
-              <span><span class="bold">Tnw</span> &copy; 2016-2020 The Next Web B.V.</span>
-              <span>Made with  &lt;3 in amsterdam</span>
-              <span>Powered by <span class="bold-2">STACKPATH</span></span>
-            </div>
-          </div>
-        </footer>
-
     </main>
+
+    <footer class="footer">
+      <div class="foot-1 d-flex">
+        <ul class="icons-2 d-flex">
+          <li>
+            <a href="#">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-twitter-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-youtube-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-pinterest"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-rss    "></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-envelope-square"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="events d-flex">
+          <li>
+            <a href="#">Events</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Advertise</a>
+          </li>
+          <li>
+            <a href="#">Jobs</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="foot-2">
+        <div class="foot-2-items d-flex">
+          <span><span class="bold">Tnw</span> &copy; 2016-2020 The Next Web B.V.</span>
+          <span>Made with  &lt;3 in amsterdam</span>
+          <span>Powered by <span class="bold-2">STACKPATH</span></span>
+        </div>
+      </div>
+    </footer>
 
 </body>
 
