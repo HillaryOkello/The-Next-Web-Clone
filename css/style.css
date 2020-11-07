@@ -567,6 +567,7 @@ h4 {
 }
 
 .grid {
+  background-image: url(../images/gear.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 300px;
@@ -837,13 +838,13 @@ h4 {
     top: 0;
     display: flex;
     justify-content: space-between;
-    width: 95%;
+    width: 99%;
   }
 
   .laptop-nav {
     display: grid;
     grid-template-columns: 60% 40%;
-    width: 95%;
+    width: 99%;
     background-color: rgb(29, 28, 28);
     padding: 0 5px 0 5px;
     height: 35px;
